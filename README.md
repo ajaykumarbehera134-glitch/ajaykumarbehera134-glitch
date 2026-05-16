@@ -14,6 +14,17 @@
 <!--                    ANIMATED TYPING GREETING                           -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
 
+<!--<div align="center">
+
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&duration=3000&pause=800&color=00D4AA&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=80&lines=Hi+%F0%9F%91%8B%2C+I'm+Ajay+Kumar+Behera;Welcome+to+my+Digital+Space+%E2%9C%A8" alt="Typing Greeting" />
+</a>
+
+<h3>
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30">
+  <em>Transforming Ideas into Reality Through Code</em>
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30">
+</h3>-->
 <div align="center">
 
 <a href="https://git.io/typing-svg">
@@ -25,6 +36,8 @@
   <em>Transforming Ideas into Reality Through Code</em>
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30">
 </h3>
+
+</div>
 
 <!-- Animated Line Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
