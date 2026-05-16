@@ -1,0 +1,56 @@
+# ═══════════════════════════════════════════════════════════
+# GitHub Contribution Snake Animation Workflow
+# Generates an animated snake from your contribution graph
+# ═══════════════════════════════════════════════════════════
+
+name: Generate Contribution Snake
+
+on:
+  # Run automatically every 12 hours
+  schedule:
+    - cron: "0 */12 * * *"
+  
+  # Allow manual trigger
+  workflow_dispatch:
+  
+  # Run on every push to main branch
+  push:
+    branches:
+      - main
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Step 2: Generate the snake animation
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          # Your GitHub username
+          github_user_name: ${{ github.repository_owner }}
+          
+          # Outputs to generate
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake-light.svg?palette=github-light
+
+      # Step 3: Deploy the generated snake to the 'output' branch
+      - name: Deploy Snake to Output Branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: true
+          commit_message: "🐍 chore: update contribution snake animation"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
