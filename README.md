@@ -113,6 +113,55 @@
 <!-- About Me Grid -->
 <div align="center">
 
+<div align="center">
+
+<table>
+  <tr>
+    <td width="50%">
+
+### 🚀 **Aspiring Fullstack Developer**
+Passionate about building end-to-end web applications with modern technologies. Turning ideas into scalable products.
+
+### 🎨 **User-Friendly UI Designer**
+Creating intuitive, accessible, and beautiful user interfaces that users genuinely love to interact with.
+
+### 📱 **Responsive Website Designer**
+Crafting pixel-perfect, seamless experiences across all devices — from mobile to ultra-wide desktop.
+
+### ⚡ **Performance Optimizer**
+Writing clean, efficient, and blazing-fast code. Every millisecond matters.
+
+### 🌱 **Continuous Learner**
+Always exploring cutting-edge technologies, frameworks, and best practices in the ever-evolving tech world.
+
+### 🔧 **Problem Solver**
+Breaking down complex challenges into elegant, maintainable solutions that stand the test of time.
+
+    </td>
+    <td width="50%">
+
+### 🤝 **Team Collaborator**
+Thriving in agile, collaborative environments. Strong communicator with cross-functional teams.
+
+### 🎯 **Goal Oriented**
+Focused on delivering high-quality results that exceed expectations and drive real business value.
+
+### 🌟 **Open Source Contributor**
+Active contributor to the developer community. Believer in the power of shared knowledge.
+
+### 🧠 **Creative Thinker**
+Bringing innovative ideas to life through code. Thinking outside the box is my default mode.
+
+### 🔐 **Security Conscious**
+Implementing secure coding practices and staying updated on the latest web security trends.
+
+### 🌍 **Global Perspective**
+Building applications with internationalization, accessibility, and inclusivity in mind.
+
+    </td>
+  </tr>
+</table>
+
 <!---<table>
   <tr>
     <td width="50%">
