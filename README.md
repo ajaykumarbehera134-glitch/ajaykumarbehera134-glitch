@@ -411,7 +411,7 @@ SQL / MySQL           ███████████░░░░░░░░�
 
 <!-- Milestones -->
 <img src="https://img.shields.io/badge/%F0%9F%93%9A%20Learning-Computer%20Science%20Fundamentals-00d4aa?style=for-the-badge&labelColor=0d1117" alt="Learning" />
-<img src="https://img.shields.io/badge/%F0%9F%8E%93%20Education-Pursuing%20B.Tech%20in%20CS-a78bfa?style=for-the-badge&labelColor=0d1117" alt="Education" />
+<img src="https://img.shields.io/badge/%F0%9F%8E%93%20Education-Pursuing%20BCA%20-a78bfa?style=for-the-badge&labelColor=0d1117" alt="Education" />
 <img src="https://img.shields.io/badge/%F0%9F%92%BB%20Projects-10%2B%20Completed%20Projects-ff6b6b?style=for-the-badge&labelColor=0d1117" alt="Projects" />
 
 </div>
