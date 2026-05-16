@@ -4,86 +4,6 @@
 <!--              Crafted with ❤️ | Last Updated: May 2026                  -->
 <!--                                                                       -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root {
-            --bg-color: #0d1117;
-            --card-bg: #161b22;
-            --border-color: #30363d;
-            --accent-color: #58a6ff;
-            --text-main: #c9d1d9;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
-        }
-
-        /* The Grid Container */
-        .project-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            max-width: 800px;
-            width: 100%;
-        }
-
-        /* Individual Project Card */
-        .project-card {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            flex: 1 1 calc(50% - 16px); /* Two columns */
-            min-width: 250px;
-            display: flex;
-            align-items: center;
-            padding: 20px;
-            text-decoration: none;
-            color: var(--text-main);
-            transition: transform 0.2s, border-color 0.2s, background 0.2s;
-        }
-
-        .project-card:hover {
-            border-color: var(--accent-color);
-            background: #1c2128;
-            transform: translateY(-2px);
-        }
-
-        /* Image/Icon Styling */
-        .project-card img {
-            width: 40px;
-            height: 40px;
-            margin-right: 15px;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-
-        /* Fallback for when images break (like in your screenshot) */
-        .project-card img:not([src]), 
-        .project-card img[src=""] {
-            visibility: hidden;
-            position: relative;
-        }
-
-        .project-card img:not([src])::after {
-            content: "📁"; /* Emoji fallback */
-            visibility: visible;
-            position: absolute;
-            font-size: 24px;
-            left: 0;
-        }
-
-        .project-title {
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-    </style>
-</head>
 
 <!-- Animated Header Banner -->
 <div align="center">
@@ -425,49 +345,7 @@ SQL / MySQL           ███████████░░░░░░░░�
 </div>
 
 <div align="center">
-    <div class="project-grid">
-        <a href="#" class="project-card" onclick="logClick('Auth Page')">
-            <img src="auth-icon.png" alt="">
-            <span class="project-title">Authentication Page</span>
-        </a>
-
-        <a href="#" class="project-card" onclick="logClick('Portfolio')">
-            <img src="portfolio-icon.png" alt="">
-            <span class="project-title">Portfolio Website</span>
-        </a>
-
-        <a href="#" class="project-card" onclick="logClick('React 2026')">
-            <img src="react-icon.png" alt="">
-            <span class="project-title">React 2026</span>
-        </a>
-
-        <a href="#" class="project-card" onclick="logClick('Calculator')">
-            <img src="calc-icon.png" alt="">
-            <span class="project-title">Calculator</span>
-        </a>
-    </div>
-
-    <script>
-        // Simple inline JS to handle clicks or logic
-        function logClick(projectName) {
-            console.log("Navigating to: " + projectName);
-            // You can add logic here, like tracking or animations
-        }
-
-        //Script to fix broken images automatically
-        document.querySelectorAll('img').forEach(img => {
-            img.onerror = function() {
-                this.style.display = 'none'; // Hide broken icon
-                const placeholder = document.createElement('div');
-                placeholder.innerHTML = '🚀'; // Use an emoji as a fallback icon
-                placeholder.style.fontSize = '24px';
-                placeholder.style.marginRight = '15px';
-                this.parentNode.insertBefore(placeholder, this.nextSibling);
-            };
-        });
-    </script>
-
-<!-- <table>
+<table>
   <tr>
     <td width="50%">
       <a href="https://github.com/ajaykumarbehera134-glitch/Authentication-page">
@@ -492,7 +370,7 @@ SQL / MySQL           ███████████░░░░░░░░�
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 
 <br>
 
