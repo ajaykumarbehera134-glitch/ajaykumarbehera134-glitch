@@ -137,9 +137,6 @@ Always exploring cutting-edge technologies, frameworks, and best practices in th
 ### 🔧 **Problem Solver**
 Breaking down complex challenges into elegant, maintainable solutions that stand the test of time.
 
-    </td>
-    <td width="50%">
-
 ### 🤝 **Team Collaborator**
 Thriving in agile, collaborative environments. Strong communicator with cross-functional teams.
 
@@ -157,8 +154,6 @@ Implementing secure coding practices and staying updated on the latest web secur
 
 ### 🌍 **Global Perspective**
 Building applications with internationalization, accessibility, and inclusivity in mind.
-
-    </td>
   </tr>
 </table>
 
