@@ -113,7 +113,7 @@
 <!-- About Me Grid -->
 <div align="center">
 
-<table>
+<!---<table>
   <tr>
     <td width="50%">
 
@@ -158,7 +158,15 @@ Building applications with internationalization, accessibility, and inclusivity 
 
     </td>
   </tr>
-</table>
+</table>-->
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+<h2>
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32">
+  <b>About Me</b>
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="32">
+</h2>
 
 <br>
 
