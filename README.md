@@ -4,6 +4,86 @@
 <!--              Crafted with ❤️ | Last Updated: May 2026                  -->
 <!--                                                                       -->
 <!-- ═══════════════════════════════════════════════════════════════════════ -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --accent-color: #58a6ff;
+            --text-main: #c9d1d9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* The Grid Container */
+        .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Individual Project Card */
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            flex: 1 1 calc(50% - 16px); /* Two columns */
+            min-width: 250px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.2s, border-color 0.2s, background 0.2s;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent-color);
+            background: #1c2128;
+            transform: translateY(-2px);
+        }
+
+        /* Image/Icon Styling */
+        .project-card img {
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        /* Fallback for when images break (like in your screenshot) */
+        .project-card img:not([src]), 
+        .project-card img[src=""] {
+            visibility: hidden;
+            position: relative;
+        }
+
+        .project-card img:not([src])::after {
+            content: "📁"; /* Emoji fallback */
+            visibility: visible;
+            position: absolute;
+            font-size: 24px;
+            left: 0;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
 
 <!-- Animated Header Banner -->
 <div align="center">
@@ -156,54 +236,6 @@ Implementing secure coding practices and staying updated on the latest web secur
 Building applications with internationalization, accessibility, and inclusivity in mind.
   </tr>
 </table>
-
-<!---<table>
-  <tr>
-    <td width="50%">
-
-### 🚀 **Aspiring Fullstack Developer**
-Passionate about building end-to-end web applications with modern technologies. Turning ideas into scalable products.
-
-### 🎨 **User-Friendly UI Designer**
-Creating intuitive, accessible, and beautiful user interfaces that users genuinely love to interact with.
-
-### 📱 **Responsive Website Designer**
-Crafting pixel-perfect, seamless experiences across all devices — from mobile to ultra-wide desktop.
-
-### ⚡ **Performance Optimizer**
-Writing clean, efficient, and blazing-fast code. Every millisecond matters.
-
-### 🌱 **Continuous Learner**
-Always exploring cutting-edge technologies, frameworks, and best practices in the ever-evolving tech world.
-
-### 🔧 **Problem Solver**
-Breaking down complex challenges into elegant, maintainable solutions that stand the test of time.
-
-    </td>
-    <td width="50%">
-
-### 🤝 **Team Collaborator**
-Thriving in agile, collaborative environments. Strong communicator with cross-functional teams.
-
-### 🎯 **Goal Oriented**
-Focused on delivering high-quality results that exceed expectations and drive real business value.
-
-### 🌟 **Open Source Contributor**
-Active contributor to the developer community. Believer in the power of shared knowledge.
-
-### 🧠 **Creative Thinker**
-Bringing innovative ideas to life through code. Thinking outside the box is my default mode.
-
-### 🔐 **Security Conscious**
-Implementing secure coding practices and staying updated on the latest web security trends.
-
-### 🌍 **Global Perspective**
-Building applications with internationalization, accessibility, and inclusivity in mind.
-
-    </td>
-  </tr>
-</table>-->
-
 
 <!-- Current Focus Chips -->
 <img src="https://img.shields.io/badge/%F0%9F%94%AD%20Currently%20Learning-Next.js%20%7C%20TypeScript%20%7C%20MongoDB%20%7C%20Docker-ff6b6b?style=for-the-badge&labelColor=1a1a2e&logo=typescript" alt="Currently Learning" />
@@ -393,8 +425,49 @@ SQL / MySQL           ███████████░░░░░░░░�
 </div>
 
 <div align="center">
+    <div class="project-grid">
+        <a href="#" class="project-card" onclick="logClick('Auth Page')">
+            <img src="auth-icon.png" alt="">
+            <span class="project-title">Authentication Page</span>
+        </a>
 
-<table>
+        <a href="#" class="project-card" onclick="logClick('Portfolio')">
+            <img src="portfolio-icon.png" alt="">
+            <span class="project-title">Portfolio Website</span>
+        </a>
+
+        <a href="#" class="project-card" onclick="logClick('React 2026')">
+            <img src="react-icon.png" alt="">
+            <span class="project-title">React 2026</span>
+        </a>
+
+        <a href="#" class="project-card" onclick="logClick('Calculator')">
+            <img src="calc-icon.png" alt="">
+            <span class="project-title">Calculator</span>
+        </a>
+    </div>
+
+    <script>
+        // Simple inline JS to handle clicks or logic
+        function logClick(projectName) {
+            console.log("Navigating to: " + projectName);
+            // You can add logic here, like tracking or animations
+        }
+
+        //Script to fix broken images automatically
+        document.querySelectorAll('img').forEach(img => {
+            img.onerror = function() {
+                this.style.display = 'none'; // Hide broken icon
+                const placeholder = document.createElement('div');
+                placeholder.innerHTML = '🚀'; // Use an emoji as a fallback icon
+                placeholder.style.fontSize = '24px';
+                placeholder.style.marginRight = '15px';
+                this.parentNode.insertBefore(placeholder, this.nextSibling);
+            };
+        });
+    </script>
+
+<!-- <table>
   <tr>
     <td width="50%">
       <a href="https://github.com/ajaykumarbehera134-glitch/Authentication-page">
@@ -419,7 +492,7 @@ SQL / MySQL           ███████████░░░░░░░░�
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 
 <br>
 
